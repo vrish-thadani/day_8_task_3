@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Responsive Design</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0fbfc;
+      color: #333;
+    }
+
+    header {
+      background-color: #00bfa6;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    header a:hover {
+      color: #004d40;
+    }
+
+    /* 2. Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #00bfa6, #1de9b6);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      padding: 30px;
+      margin: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .section-wrapper {
+      display: flex;
+      margin: 40px 20px;
+      gap: 20px;
+    }
+
+    aside {
+      background: #c8f7f4;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      height: fit-content;
+    }
+
+    .content {
+      flex: 1;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    }
+    .btn {
+      display: block;
+      width: 200px;
+      margin: 40px auto;
+      padding: 15px;
+      background-color: #00bfa6;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00796b;
+    }
+
+    .image-wrapper img {
+      width: 90%;
+      max-width: 700px;
+      display: block;
+      margin: 40px auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-wrapper {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+      }
+
+      .btn {
+        width: 80%;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="#">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Fresh Designs</h1>
+    <p>Bringing creativity and responsiveness to every pixel.</p>
+  </section>
+
+  <section class="card-grid">
+    <div class="card">
+      <h3>Responsive Layouts</h3>
+      <p>Built to look stunning on any device — big or small.</p>
+    </div>
+    <div class="card">
+      <h3>Modern UI</h3>
+      <p>Clean, beautiful, and lightweight user interfaces.</p>
+    </div>
+  </section>
+
+  <div class="section-wrapper">
+    <aside>
+      <h3>Menu</h3>
+      <ul style="list-style:none; padding:0;">
+        <li>Features</li>
+        <li>Gallery</li>
+        <li>Resources</li>
+        <li>Support</li>
+      </ul>
+    </aside>
+
+    <div class="content">
+      <h2>About Our Work</h2>
+      <p>We specialize in building responsive, clean, and accessible web interfaces. Our design philosophy puts user experience at the center of every project.</p>
+      <p>Whether you’re looking for a brand website or a full web application, we craft solutions that work beautifully on any screen size.</p>
+    </div>
+  </div>
+
+  <button class="btn">Get Started</button>
+
+  <div class="image-wrapper">
+    <img src="https://via.placeholder.com/800x400.png?text=Creative+Design" alt="Creative Work">
+  </div>
+
+</body>
+</html>
